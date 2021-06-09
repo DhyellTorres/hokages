@@ -16,13 +16,54 @@
     <div class="container">
         <header>
             <div class="img-wrapper">
-                <img src="./images/mapeamento.jpg" alt="Mapeamento dos Hokages"/>
+                <img src="./images/mapeamento.jpg" alt="Mapeamento dos Hokages" usemap="#mapeamento" />
+                <map name="mapeamento" id="mapeamento">
+                    <area id="hokage1" alt="1°Hokage" title="1°Hokage" href="/1hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                    <area id="hokage2" alt="2°Hokage" title="2°Hokage" href="/2hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                    <area id="hokage3" alt="3°Hokage" title="3°Hokage" href="/3hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                    <area id="hokage4" alt="4°Hokage" title="4°Hokage" href="/4hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                    <area id="hokage5" alt="5°Hokage" title="5°Hokage" href="/5hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                    <area id="hokage6" alt="6°Hokage" title="6°Hokage" href="/6hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                    <area id="hokage7" alt="7°Hokage" title="7°Hokage" href="/7hokage" shape="rect" coords="0,0,0,0"
+                        target="_self" />
+                </map>
+                <script src="script.js"></script>
             </div>
             <div class="barra-tarefa">
-                <a href="/"><img src="./images/favicon-32x32.png" alt="Hokages Logo"/></a>
+                <a href="/"><img src="./images/favicon-32x32.png" alt="Hokages Logo" /></a>
             </div>
         </header>
     </div>
+
+    <script>
+        function attMap() {
+            var hokages = [document.querySelector("#hokage1"), document.querySelector("#hokage2"), document.querySelector("#hokage3"), document.querySelector("#hokage4"), document.querySelector("#hokage5"), document.querySelector("#hokage6"), document.querySelector("#hokage7")],
+                coordenadasHokage = [7],
+                altura = window.innerHeight,
+                largura = window.innerWidth,
+                x1 = 0,
+                x2 = 0,
+                mult = 0;
+            for (var i = 0; i < 7; i++) {
+                mult += 1;
+                x1 = x2;
+                x2 = largura / 100;
+                x2 = x2 * (14.28 * mult);
+                coordenadasHokage[i] = x1 + ",0," + x2 + "," + altura;
+                hokages[i].setAttribute("coords", coordenadasHokage[i]);
+            }
+        };
+        window.addEventListener('resize', function () {
+            attMap();
+        });
+    </script>
+
 </body>
 
 </html>
