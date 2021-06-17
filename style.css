@@ -5,6 +5,81 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-aciton: "Muli", serif;
+}
+
+.hamburguer{
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    z-index: 100;
+    right: 2rem;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: url('./images/ko-vermelho.png'), pointer;
+    transition: all 1.3s;
+}
+
+.show-menu .hamburguer{
+    right: 15rem;
+}
+
+.line{
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+    box-shadow: 0.1rem 0.1rem 2px #000;
+    transition: transform 1s;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(0.4rem, 0.2rem);
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(0.4rem, -0.4rem);
+}
+
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #691c9d;
+    color: #fcfcfcc2;
+    font-family: var(--font-aciton);
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: 0.5rem solid #691c9d;
+    border-left: 0.5rem solid transparent;
+    border-top: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 1;
 }
 
 header{
@@ -55,6 +130,68 @@ header{
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
+}
+
+.sidebar{
+    width: 20rem;
+    height: 100vh;
+    background-color: #808080;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+
+.show-menu .sidebar{
+    right: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+
+.menu-link{
+    font-family: var(--font-aciton);
+    font-size: 1.5rem;
+    color: #691c9d;
+    transition: color 0.5s;
+}
+
+.menu-link:hover{
+    color: #fff;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-media i{
+    background-color: #691c9dab;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #fcfcfc69;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: color 0.5s;
+}
+
+.social-media i:hover{
+    color: rgba(0, 0, 0, 0.712);
 }
 
 body{

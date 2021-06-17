@@ -6,7 +6,7 @@ O controle de tarefas desse projeto será visualizado no GitHub
 
 ## Ícones
 
-:package: nova funcionalidade
-:up: atualização
-:bug: correção de bug
-:checkered_flag: release
+- :package: nova funcionalidade
+- :up: atualização
+- :bug: correção de bug
+- :checkered_flag: release
