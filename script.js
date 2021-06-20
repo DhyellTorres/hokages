@@ -16,7 +16,7 @@ function attMap() {
         mult += 1;
         x1 = x2;
         x2 = largura / 100;
-        x2 = x2 * (14.28 * mult);
+        x2 = x2 * (14.05 * mult);
         coordenadasHokage[i] = x1 + "," + y + "," + x2 + "," + altura;
         hokages[i].setAttribute("coords", coordenadasHokage[i]);
     }
