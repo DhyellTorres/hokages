@@ -15,6 +15,10 @@
     --font-aciton: "Muli", serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     cursor: url('./images/ko-preto.png'), pointer;
 }
@@ -152,6 +156,7 @@ a{
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 99;
 }
 
 .show-menu .sidebar{
@@ -454,8 +459,8 @@ footer{
 
 #link-topo{
     position: fixed;
-    right: 0rem;
-    bottom: 0rem;
+    right: 3rem;
+    bottom: 3rem;
     width: 3rem;
     height: 3rem;
     color: #b1aeae;
