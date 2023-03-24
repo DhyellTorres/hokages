@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Hokages</title>
 </head>
@@ -24,44 +24,54 @@
 
         <header id="header">
             <div class="img-wrapper">
-                <img src="./images/mapeamento.jpg" alt="Mapeamento dos Hokages" usemap="#mapeamento" />
+                <img src="/images/mapeamento.jpg" alt="Mapeamento dos Hokages" usemap="#mapeamento" />
                 <map name="mapeamento" id="mapeamento">
-                    <area id="hokage1" alt="1°Hokage" title="1° Hokage" href="./1hokage.html" shape="rect"
+                    <area id="hokage1" alt="1ºHokage" title="1º Hokage" href="./1hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
-                    <area id="hokage2" alt="2°Hokage" title="2° Hokage" href="./2hokage.html" shape="rect"
+                    <area id="hokage2" alt="2ºHokage" title="2º Hokage" href="./2hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
-                    <area id="hokage3" alt="3°Hokage" title="3° Hokage" href="./3hokage.html" shape="rect"
+                    <area id="hokage3" alt="3ºHokage" title="3º Hokage" href="./3hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
-                    <area id="hokage4" alt="4°Hokage" title="4° Hokage" href="./4hokage.html" shape="rect"
+                    <area id="hokage4" alt="4ºHokage" title="4º Hokage" href="./4hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
                     <area id="hokage5" alt="5ªHokage" title="5ª Hokage" href="./5hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
-                    <area id="hokage6" alt="6°Hokage" title="6° Hokage" href="./6hokage.html" shape="rect"
+                    <area id="hokage6" alt="6ºHokage" title="6º Hokage" href="./6hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
-                    <area id="hokage7" alt="7°Hokage" title="7° Hokage" href="./7hokage.html" shape="rect"
+                    <area id="hokage7" alt="7ºHokage" title="7º Hokage" href="./7hokage.html" shape="rect"
                         coords="0,0,0,0" target="_self" />
                 </map>
             </div>
 
             <div class="barra-tarefa">
-                <a href="/"><img src="./images/logo.png" alt="Hokages Logo" /></a>
+                <a href="/"><img src="/images/logo.png" alt="Hokages Logo" /></a>
             </div>
 
         </header>
 
         <aside class="sidebar">
             <nav>
+                <div class="language-dropdown">
+                    <div class="selected-language">
+                        <span>PT</span>
+                        <a><i class="fas fa-chevron-down"></i></a>
+                    </div>
+                    <ul class="language-options">
+                        <li><a href="/en/">EN</a></li>
+                        <li><a href="/es/">ES</a></li>
+                    </ul>
+                </div>
                 <ul class="menu">
                     <li class="menu-item"><a href="#historia" class="menu-link">Hokage</a></li>
                     <li class="menu-item"><a href="#videos" class="menu-link">Videos</a></li>
                     <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="./1hokage.html" class="menu-link">1° Hokage</a></li>
-                    <li class="menu-item"><a href="./2hokage.html" class="menu-link">2° Hokage</a></li>
-                    <li class="menu-item"><a href="./3hokage.html" class="menu-link">3° Hokage</a></li>
-                    <li class="menu-item"><a href="./4hokage.html" class="menu-link">4° Hokage</a></li>
-                    <li class="menu-item"><a href="./5hokage.html" class="menu-link">5° Hokage</a></li>
-                    <li class="menu-item"><a href="./6hokage.html" class="menu-link">6° Hokage</a></li>
-                    <li class="menu-item"><a href="./7hokage.html" class="menu-link">7° Hokage</a></li>
+                    <li class="menu-item"><a href="./1hokage.html" class="menu-link">1º Hokage</a></li>
+                    <li class="menu-item"><a href="./2hokage.html" class="menu-link">2º Hokage</a></li>
+                    <li class="menu-item"><a href="./3hokage.html" class="menu-link">3º Hokage</a></li>
+                    <li class="menu-item"><a href="./4hokage.html" class="menu-link">4º Hokage</a></li>
+                    <li class="menu-item"><a href="./5hokage.html" class="menu-link">5ª Hokage</a></li>
+                    <li class="menu-item"><a href="./6hokage.html" class="menu-link">6º Hokage</a></li>
+                    <li class="menu-item"><a href="./7hokage.html" class="menu-link">7º Hokage</a></li>
                 </ul>
             </nav>
 
@@ -156,7 +166,7 @@
                 </div>
 
                 <div class="historias-img-wrapper">
-                    <img src="./images/android-chrome-512x512.png" alt="imagem chapeu hokage" />
+                    <img src="/images/android-chrome-512x512.png" alt="imagem chapeu hokage" />
                 </div>
 
             </div>
@@ -190,21 +200,21 @@
                 <div class="contato-right">
                     <h1>Contato</h1>
                     <h3>
-                        Achou algum erro ou tem alguma sugestão?<br/>
+                        Achou algum erro ou tem alguma sugestão?<br />
                         Nos comunique!
                     </h3>
                     <form>
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            <label for="nome" class="field-label">Nome</label>
+                            <input type="text" class="field" id="name">
+                            <label for="name" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
                             <input type="text" class="field" id="email">
                             <label for="email" class="field-label">E-mail</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
-                            <label for="mensagem" class="field-label">Mensagem</label>
+                            <textarea class="field" id="message"></textarea>
+                            <label for="message" class="field-label">Mensagem</label>
                         </div>
                         <button type="submit" class="btn-submit">Enviar</button>
                     </form>
@@ -226,13 +236,13 @@
                 </div>
             </div>
         </footer>
-        
+
         <a href="#header" id="link-topo">
             <i class="fas fa-arrow-up"></i>
         </a>
 
     </div>
 </body>
-<script src="script.js"></script>
+<script src="/script.js"></script>
 
 </html>

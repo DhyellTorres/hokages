@@ -2,6 +2,11 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
     document.querySelector(".container").classList.toggle("show-menu")
 );
 
+
+document.querySelector(".selected-language").addEventListener("click", () =>
+    document.querySelector(".language-dropdown").classList.toggle("show-language")
+);
+
 function attMap() {
     var hokages = [document.querySelector("#hokage1"), document.querySelector("#hokage2"), document.querySelector("#hokage3"), document.querySelector("#hokage4"), document.querySelector("#hokage5"), document.querySelector("#hokage6"), document.querySelector("#hokage7")],
         coordenadasHokage = [7],
